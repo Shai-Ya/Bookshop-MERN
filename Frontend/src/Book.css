@@ -1,0 +1,59 @@
+ .bookcard { /*styles for inner book card */
+    margin: 10px;
+    display: flex;
+    flex-direction: column; /* title stacked on cover-image */
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+/*     justify-content: flex-start; */ 
+    cursor: pointer;
+    position: relative; /* for hover effect */
+}
+
+.themodal { /* sets Modal "front layer" position*/
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(56, 55, 55, 0.8); 
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .bookcard :hover{
+   color: rgb(125, 51, 136);
+} */
+
+.bookcard h3 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.bookcard:hover::before {
+    content: "";
+    position: absolute;
+    border-radius: 9px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(153, 151, 154, 0.3);
+    z-index: 0;
+}
+
+ .image {
+    height: 230px; 
+/*     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;  */
+    border-radius: 2px;
+} 
+  
+  

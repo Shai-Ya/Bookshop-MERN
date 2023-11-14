@@ -1,0 +1,52 @@
+.content { /* content is column - quote stacked on book stacked on pagination */
+    height: 635px;
+    display: flex;
+    flex-direction: column;
+/*     flex: 3; */
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    align-items: center;
+    text-align: center; 
+}
+
+.quote {
+    margin: 20px;
+    color: #333;
+    display: flex;
+    /* flex:1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.book { 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /*when shrunk start staking books */
+    max-height: 350px;  /*maximum height for the book container */
+    overflow-y: auto; /* vertical scrolling when content exceeds max height so no slide to footer*/
+}
+
+.pagination {
+    width: 100%;
+    
+}
+
+.active {
+    font-weight: bold;
+    color: rgb(125, 51, 136);
+}
+
+.pagination ul {
+    margin-right: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
